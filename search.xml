@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>通过python对爱奇艺犯罪电影的爬取</title>
+    <url>/uncategorized/%E9%80%9A%E8%BF%87python%E5%AF%B9%E7%88%B1%E5%A5%87%E5%BC%82%E7%8A%AF%E7%BD%AA%E7%94%B5%E5%BD%B1%E7%9A%84%E7%88%AC%E5%8F%96/</url>
+    <content><![CDATA[<p>听到同学说他们的python的期末作业是使用python对爱奇艺的犯罪电影信息进行爬取，并生成excel，尝试了下<br>2019年尝试的。<br><a href="https://github.com/dsfgdadg/iqiyi_spider">https://github.com/dsfgdadg/iqiyi_spider</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Debian下hexo安装记录</title>
+    <url>/uncategorized/debian%E4%B8%8Bhexo%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<p>安装  Node.js LTS<br><a href="https://github.com/nodesource/distributions#debinstall">https://github.com/nodesource/distributions#debinstall</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - &amp;&amp;\</span><br><span class="line">apt-get install -y nodejs</span><br></pre></td></tr></table></figure>
+
+
+<p>安装hexo，参照<br><a href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mkdir hexo</span><br><span class="line">cd hexo</span><br><span class="line">npm install -g hexo-cli</span><br><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+
+<p>安装next主题<br><a href="https://github.com/next-theme/hexo-theme-next">https://github.com/next-theme/hexo-theme-next</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/next-theme/hexo-theme-next themes/next</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<p>添加字数统计<br>修改hexo配置文件以及next主题配置文件<br><a href="https://github.com/next-theme/hexo-word-counter">https://github.com/next-theme/hexo-word-counter</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-word-counter --save</span><br><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+
+<p>添加搜索<br><a href="http://theme-next.iissnan.com/third-party-services.html#search-system">http://theme-next.iissnan.com/third-party-services.html#search-system</a><br><a href="https://hexo-next.readthedocs.io/zh_CN/latest/next/advanced/%E6%90%9C%E7%B4%A2%E6%9C%8D%E5%8A%A1/">https://hexo-next.readthedocs.io/zh_CN/latest/next/advanced/%E6%90%9C%E7%B4%A2%E6%9C%8D%E5%8A%A1/</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+
+<p>阅读全文<br>官方文档中提到的auto_excerpt在新版本中取消了<br><a href="http://theme-next.iissnan.com/faqs.html#read-more">http://theme-next.iissnan.com/faqs.html#read-more</a><br>故改用<br><a href="https://github.com/chekun/hexo-excerpt">https://github.com/chekun/hexo-excerpt</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-excerpt --save</span><br></pre></td></tr></table></figure>
+
+<p>文章加密插件<br><a href="https://github.com/D0n9X1n/hexo-blog-encrypt/blob/master/ReadMe.zh.md">https://github.com/D0n9X1n/hexo-blog-encrypt/blob/master/ReadMe.zh.md</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-blog-encrypt</span><br></pre></td></tr></table></figure>
+
+
+<p>文章置顶<br><a href="https://github.com/hexojs/hexo-generator-index">https://github.com/hexojs/hexo-generator-index</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-index --save</span><br></pre></td></tr></table></figure>
+<p><a href="https://github.com/netcan/hexo-generator-index-pin-top">https://github.com/netcan/hexo-generator-index-pin-top</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-generator-index --save</span><br><span class="line">npm install hexo-generator-index-pin-top --save</span><br></pre></td></tr></table></figure>
+
+
+]]></content>
+      <tags>
+        <tag>linux</tag>
+        <tag>debian</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>motorola edge s 固定网关ip</title>
+    <url>/uncategorized/motorola%20edge%20s%20%E5%9B%BA%E5%AE%9A%E7%BD%91%E5%85%B3ip/</url>
+    <content><![CDATA[<p>源项目<br><a href="https://github.com/XhyEax/SoftApHelper">https://github.com/XhyEax/SoftApHelper</a><br>去年就见过这个项目，因为在自己的热点机上不生效，没有用过。<br>今天想起来了，尝试解决。</p>
+<p>热点机motorola edge s，安卓11</p>
+<p>源项目作者对原理的分析<br><a href="https://blog.xhyeax.com/2021/12/06/android-10-11-hostpot-set-ip/">https://blog.xhyeax.com/2021/12/06/android-10-11-hostpot-set-ip/</a><br>通过对原项目代码的查看，发现实现功能的函数在app&#x2F;src&#x2F;main&#x2F;java&#x2F;com&#x2F;xhy&#x2F;xp&#x2F;softaphelper&#x2F;MainHook.java中。<br>开启打印日志，在lsposed中发现是包名没有hook到，包名匹配不正确。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">pkgNameSet.add(<span class="string">&quot;com.android.networkstack.tethering.inprocess&quot;</span>);</span><br><span class="line">pkgNameSet.add(<span class="string">&quot;com.android.networkstack.tethering&quot;</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>增加了正确的包名</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">pkgNameSet.add(<span class="string">&quot;com.android.networkstack.tethering.inprocess&quot;</span>);</span><br><span class="line">pkgNameSet.add(<span class="string">&quot;com.android.networkstack.tethering&quot;</span>);</span><br><span class="line">pkgNameSet.add(<span class="string">&quot;com.google.android.networkstack.tethering.inprocess&quot;</span>);</span><br><span class="line">pkgNameSet.add(<span class="string">&quot;com.google.android.networkstack.tethering&quot;</span>);</span><br></pre></td></tr></table></figure>
+<p>提取目标手机中TetheringGoogle.apk，使用jadx对TetheringGoogle反编译。<br>发现原requestIpv4Address()方法中无参数的传入，<br>目标手机的requestIpv4Address(boolean z)有参数的传入<br>源IpServer.java#645</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> LinkAddress <span class="title function_">requestIpv4Address</span><span class="params">()</span></span><br></pre></td></tr></table></figure>
+<p>motorola edge s的IpServer.java#655</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> LinkAddress <span class="title function_">requestIpv4Address</span><span class="params">(<span class="type">boolean</span> z)</span> &#123;</span><br></pre></td></tr></table></figure>
+<p>修改部分代码</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">            findAndHookMethod(className, classLoader, methodName, <span class="type">boolean</span>.class,</span><br><span class="line">                    <span class="keyword">new</span> <span class="title class_">XC_MethodHook</span>() &#123;</span><br><span class="line">                        <span class="meta">@Override</span></span><br><span class="line">                        <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">beforeHookedMethod</span><span class="params">(XC_MethodHook.MethodHookParam param)</span> <span class="keyword">throws</span> Throwable &#123;</span><br><span class="line">                            <span class="built_in">super</span>.beforeHookedMethod(param);</span><br><span class="line"><span class="comment">//                            XposedBridge.log(StackUtils.getStackTraceString());</span></span><br><span class="line">                            <span class="keyword">if</span> (StackUtils.isCallingFrom(className, callerMethodName_Q)) &#123;</span><br><span class="line">                                param.setResult(mLinkAddress);</span><br><span class="line">                            &#125;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;);</span><br></pre></td></tr></table></figure>
+
+
+<p>后通过参考实现LSPosed的作用域的自动勾选<br><a href="https://blog.csdn.net/niubitianping/article/details/117668651">https://blog.csdn.net/niubitianping/article/details/117668651</a></p>
+]]></content>
+      <tags>
+        <tag>linux</tag>
+        <tag>arch</tag>
+        <tag>Android</tag>
+        <tag>JAVA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>通过Docker安装nas上常用的服务</title>
+    <url>/uncategorized/%E9%80%9A%E8%BF%87Docker%E5%AE%89%E8%A3%85nas%E4%B8%8A%E5%B8%B8%E7%94%A8%E7%9A%84%E6%9C%8D%E5%8A%A1/</url>
+    <content><![CDATA[<p>docker安装portainer管理面板<br><a href="https://github.com/tbc0309/Portainer-CN2021">https://github.com/tbc0309/Portainer-CN2021</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run --name portainer -d \</span><br><span class="line">-p 50011:9000 \</span><br><span class="line">-v /var/run/docker.sock:/var/run/docker.sock \</span><br><span class="line">-v /usr/docker/portainer/data/:/data \</span><br><span class="line">-v /usr/docker/portainer/public/:/public \</span><br><span class="line">portainer/portainer</span><br></pre></td></tr></table></figure>
+
+<p>docker安装PrivateBin</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d --restart=<span class="string">&quot;always&quot;</span> --name=privatebin --read-only -p 50013:8080 -v /usr/docker/privatebin/data:/srv/data privatebin/nginx-fpm-alpine</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>docker安装签到面板</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker pull daocloud.io/fangzhengjin/qiandao</span><br><span class="line">docker run -d -p 50001:80 --name qiandao daocloud.io/fangzhengjin/qiandao</span><br><span class="line"></span><br><span class="line">docker <span class="built_in">rm</span> -f qiandao</span><br><span class="line">docker run -d --name qiandao --<span class="built_in">env</span> AES_KEY=656666 --<span class="built_in">env</span> COOKIE_SECRET=656666 --<span class="built_in">env</span> DOMAIN=h6.659.buzz -p 50001:80 -v /usr/docker/qiandao/config:/usr/src/app/config a76yyyy/qiandao</span><br><span class="line"></span><br><span class="line">docker <span class="built_in">rm</span> -f qiandao</span><br><span class="line">docker run -d --name qiandao -p 50001:80 -v /usr/docker/qiandao/config:/usr/src/app/config a76yyyy/qiandao</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<p>docker 安装flare导航<br><a href="https://github.com/soulteary/docker-flare/">https://github.com/soulteary/docker-flare/</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run --<span class="built_in">rm</span> -it --name flare -d -p 50005:5005 -v /usr/docker/flare/app:/app soulteary/flare</span><br><span class="line">docker run --name flare -d -p 50005:5005 -v /usr/docker/flare/app:/app soulteary/flare</span><br></pre></td></tr></table></figure>
+
+
+<p>docker aria2-pro<br><a href="https://github.com/P3TERX/Aria2-Pro-Docker">https://github.com/P3TERX/Aria2-Pro-Docker</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d \</span><br><span class="line">    --name aria2-pro1 \</span><br><span class="line">    --restart unless-stopped \</span><br><span class="line">    --log-opt max-size=1m \</span><br><span class="line">    --network host \</span><br><span class="line">    -e PUID=<span class="variable">$UID</span> \</span><br><span class="line">    -e PGID=<span class="variable">$GID</span> \</span><br><span class="line">    -e RPC_SECRET=WGT8DsMBBLMsjZVw6NWq \</span><br><span class="line">    -e RPC_PORT=56801 \</span><br><span class="line">    -e LISTEN_PORT=56901 \</span><br><span class="line">    -v /usr/docker/aria2-pro1/config:/config \</span><br><span class="line">    -v /usr/docker/aria2-pro1/downloads:/downloads \</span><br><span class="line">    p3terx/aria2-pro</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>docker配置watchtower自动更新</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">#自动更新镜像 容器</span></span><br><span class="line">https://www.likecs.com/show-205274611.html</span><br><span class="line">sudo <span class="built_in">tee</span> ~/.watchtower.list &lt;&lt;<span class="string">EOF</span></span><br><span class="line"><span class="string">qiandao</span></span><br><span class="line"><span class="string">alist</span></span><br><span class="line"><span class="string">aria2-pro</span></span><br><span class="line"><span class="string">EOF</span></span><br><span class="line">docker stop watchtower &gt;/dev/null 2&gt;&amp;1;</span><br><span class="line">docker <span class="built_in">rm</span> watchtower &gt;/dev/null 2&gt;&amp;1;</span><br><span class="line">docker run -d \</span><br><span class="line">    --name watchtower \</span><br><span class="line">    --restart unless-stopped \</span><br><span class="line">    -v /var/run/docker.sock:/var/run/docker.sock \</span><br><span class="line">    containrrr/watchtower -c \</span><br><span class="line">    $(<span class="built_in">cat</span> ~/.watchtower.list)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">docker run -d \</span><br><span class="line">    --name watchtower \</span><br><span class="line">    -v /var/run/docker.sock:/var/run/docker.sock \</span><br><span class="line">    containrrr/watchtower</span><br><span class="line"></span><br><span class="line">docker run -d \</span><br><span class="line">    --name watchtower \</span><br><span class="line">    --restart unless-stopped \</span><br><span class="line">    -v /var/run/docker.sock:/var/run/docker.sock \</span><br><span class="line">    containrrr/watchtower \</span><br><span class="line">    -c openwrt_p \</span><br><span class="line"></span><br><span class="line">docker run  \</span><br><span class="line">    --name watchtower \</span><br><span class="line">    --restart unless-stopped \</span><br><span class="line">    -v /var/run/docker.sock:/var/run/docker.sock \</span><br><span class="line">    containrrr/watchtower \</span><br><span class="line">    -c openwrt_p \</span><br><span class="line">    --run-once</span><br><span class="line">    --cleanup</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <tags>
+        <tag>vps</tag>
+        <tag>linux</tag>
+        <tag>debian</tag>
+        <tag>nas</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Debian下docker的安装</title>
+    <url>/uncategorized/Debian%E4%B8%8Bdocker%E7%9A%84%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<p>准备工作</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get remove -y docker docker-engine docker.io</span><br><span class="line">sudo apt-get install -y apt-transport-https ca-certificates curl gnupg2 software-properties-common</span><br><span class="line">curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -</span><br><span class="line">sudo add-apt-repository \</span><br><span class="line">   &quot;deb [arch=amd64] https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/debian \</span><br><span class="line">   $(lsb_release -cs) \</span><br><span class="line">   stable&quot;</span><br></pre></td></tr></table></figure>
+<p>docker的安装</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get update -y</span><br><span class="line">sudo apt-get install -y docker-ce</span><br><span class="line">sudo mkdir -p /etc/docker</span><br><span class="line">sudo tee /etc/docker/daemon.json &lt;&lt;EOF</span><br><span class="line">&#123;</span><br><span class="line">    &quot;registry-mirrors&quot;: [</span><br><span class="line">        &quot;https://ustc-edu-cn.mirror.aliyuncs.com/&quot;,</span><br><span class="line">        &quot;https://hub-mirror.c.163.com/&quot;</span><br><span class="line">    ],</span><br><span class="line">    &quot;dns&quot;: [&quot;127.0.0.1&quot;, &quot;8.8.8.8&quot;]</span><br><span class="line">&#125;</span><br><span class="line">EOF</span><br><span class="line">sudo systemctl enable docker</span><br><span class="line">sudo systemctl daemon-reload</span><br><span class="line">sudo systemctl restart docker</span><br><span class="line">sudo groupadd docker</span><br><span class="line">sudo usermod -aG docker $USER</span><br><span class="line">newgrp docker</span><br></pre></td></tr></table></figure>
+<p>安装docker-compose</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo curl -L https://github.com/docker/compose/releases/download/v2.3.3/docker-compose-linux-`uname -m` &gt; ./docker-compose</span><br><span class="line">sudo chmod +x ./docker-compose</span><br><span class="line">sudo mv ./docker-compose /usr/local/bin/docker-compose</span><br></pre></td></tr></table></figure>
+
+
+]]></content>
+      <tags>
+        <tag>vps</tag>
+        <tag>linux</tag>
+        <tag>debian</tag>
+        <tag>nas</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>systemd常见问题</title>
+    <url>/uncategorized/NAS%E4%BC%98%E5%8C%96/</url>
+    <content><![CDATA[<p>为了节省资源，开机之后我不想让系统启动图形界面。想就停在控制台的文字界面就可以。<br>于是乎：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl set-default multi-user.target</span><br></pre></td></tr></table></figure>
+
+<p>如果想重新启动自动进入图形界面的话就：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl set-default graphical.target</span><br></pre></td></tr></table></figure>
+
+<p>把启动顺序及用时信息存成svg格式图表，一目了然</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">systemd-analyze plot &gt; ~/Desktop/boot.svg</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://blog.csdn.net/harry_wang0/article/details/108190385">https://blog.csdn.net/harry_wang0/article/details/108190385</a></p>
+<h1 id="列出所有加载失败的-Unit"><a href="#列出所有加载失败的-Unit" class="headerlink" title="列出所有加载失败的 Unit"></a>列出所有加载失败的 Unit</h1><p>systemctl list-units –failed<br>systemctl –failed</p>
+]]></content>
+      <tags>
+        <tag>vps</tag>
+        <tag>linux</tag>
+        <tag>debian</tag>
+        <tag>nas</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Debian下防火墙的配置</title>
+    <url>/uncategorized/debian%E4%B8%8Bfirewalld%E9%98%B2%E7%81%AB%E5%A2%99%E7%9A%84%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<p><strong>1、安装</strong></p>
+<p>在root权限下执行命令行安装。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt update</span><br><span class="line">sudo apt install fail2ban firewalld</span><br></pre></td></tr></table></figure>
+
+
+<p><strong>2、配置</strong><br>2.1 <em><strong>Fail2ban 的配置</strong></em><br>参考<br><a href="https://www.cnblogs.com/tanger/p/14868501.html">https://www.cnblogs.com/tanger/p/14868501.html</a></p>
+<p>2.2 <em><strong>Firewalld 的配置</strong></em><br>其中对网络区域zones的理解讲的很通俗易懂<br><a href="https://blog.csdn.net/weixin_45776100/article/details/123081660">https://blog.csdn.net/weixin_45776100/article/details/123081660</a><br>在trusted中添加需要默认方向的ip，例如局域网中的ip<br>##每次修改完后记得重新加载一下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure>
+
+<p><strong>3、附加：iptables</strong><br><a href="https://www.zsythink.net/archives/category/%e8%bf%90%e7%bb%b4%e7%9b%b8%e5%85%b3/iptables">https://www.zsythink.net/archives/category/%e8%bf%90%e7%bb%b4%e7%9b%b8%e5%85%b3/iptables</a></p>
+]]></content>
+      <tags>
+        <tag>vps</tag>
+        <tag>linux</tag>
+        <tag>debian</tag>
+        <tag>nas</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为红米note4x编译crdroid</title>
+    <url>/uncategorized/%E4%B8%BA%E7%BA%A2%E7%B1%B3note4x%E7%BC%96%E8%AF%91crdroid/</url>
+    <content><![CDATA[<p>为红米note4x编译kernel并增加docker的支持</p>
+<p><a href="https://www.erickbuilds.tech/2021/07/crdroid-official-build-for-xiaomi-redmi.html">https://www.erickbuilds.tech/2021/07/crdroid-official-build-for-xiaomi-redmi.html</a></p>
+]]></content>
+      <tags>
+        <tag>linux</tag>
+        <tag>arch</tag>
+        <tag>Android</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>archlinux下搭建安卓开发环境</title>
+    <url>/uncategorized/archlinux%E4%B8%8B%E6%90%AD%E5%BB%BA%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</url>
+    <content><![CDATA[<p><a href="https://wiki.archlinux.org/title/Android">https://wiki.archlinux.org/title/Android</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">paru -S  aosp-devel lineageos-devel</span><br></pre></td></tr></table></figure>
+
+
+]]></content>
+      <tags>
+        <tag>linux</tag>
+        <tag>arch</tag>
+        <tag>Android</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Archlinux的安装</title>
+    <url>/uncategorized/archlinux%E7%9A%84%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<p>参考<br><a href="https://archlinuxstudio.github.io/ArchLinuxTutorial/#/rookie/basic_install">https://archlinuxstudio.github.io/ArchLinuxTutorial/#/rookie/basic_install</a><br><a href="https://wiki.archlinux.org/title/Installation_guide">https://wiki.archlinux.org/title/Installation_guide</a></p>
+<p>使用kde桌面<br>kdeconnect来多平台同步剪切板</p>
+]]></content>
+      <tags>
+        <tag>linux</tag>
+        <tag>arch</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux开启swap的方法</title>
+    <url>/uncategorized/Linux%E5%BC%80%E5%90%AFswap%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p>Linux中Swap（即：交换分区），类似于Windows的虚拟内存，就是当内存不足的时候，把一部分硬盘空间虚拟成内存使用,从而解决内存容量不足的情况。</p>
+<p> 交换分区，英文的说法是swap，意思是“交换”、“实物交易”。它的功能就是在内存不够的情况下，操作系统先把内存中暂时不用的数据，存到硬盘的交换空间，腾出内存来让别的程序运行，和Windows的虚拟内存（pagefile.sys）的作用是一样的。</p>
+<p>查看</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">free -m</span><br></pre></td></tr></table></figure>
+
+
+<p>可以看到swap大小为0！执行如下：</p>
+ <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd /var/</span><br><span class="line">dd if=/dev/zero of=swapfile bs=1024 count=1048576 #创建大小为1G的文件swapfile</span><br><span class="line">mkswap swapfile #格式化虚拟内存文件</span><br><span class="line">swapon swapfile #激活虚拟内存文件</span><br></pre></td></tr></table></figure>
+
+
+
+<p>再编辑自动挂载文件，让系统开机的时候自动加载虚拟内存文件，将下面的内容复制&#x2F;粘贴，然后按Esc键，输入:x保存并退出！</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">vi /etc/fstab</span><br></pre></td></tr></table></figure>
+
+
+
+<p>添加：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/var/swapfile swap swap defaults 0 0</span><br></pre></td></tr></table></figure>
+
+
+
+<p>或者懒得VI，直接：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">echo ‘/var/swapfile swap swap defaults 0 0 ‘ &gt;&gt; /etc/fstab</span><br></pre></td></tr></table></figure>
+
+
+
+<p>查看fstab：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cat /etc/fstab</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">free -m查看</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>linux</tag>
+        <tag>debian</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>debian目录默认中文</title>
+    <url>/uncategorized/debian%E7%9B%AE%E5%BD%95%E9%BB%98%E8%AE%A4%E4%B8%AD%E6%96%87/</url>
+    <content><![CDATA[<p>目录彩色</p>
+<p>vi ~&#x2F;.bashrc</p>
+<p>alias ls&#x3D;’ls –color’</p>
+<p>source ~&#x2F;.bashrc</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">apt-get install locales</span><br><span class="line">dpkg-reconfigure locales</span><br></pre></td></tr></table></figure>
+
+
+
+
+<p>目录英文改中文<br>1.修改~&#x2F;.config&#x2F;user-dirs.dirs这个配置文件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">vi ~/.config/user-dirs.dirs</span><br></pre></td></tr></table></figure>
+
+
+
+<p>中文版的配置文件是这样的</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># This file is written by xdg-user-dirs-update</span><br><span class="line"># If you want to change or add directories, just edit the line you&#x27;re</span><br><span class="line"># interested in. All local changes will be retained on the next run</span><br><span class="line"># Format is XDG_xxx_DIR=&quot;$HOME/yyy&quot;, where yyy is a shell-escaped</span><br><span class="line"># homedir-relative path, or XDG_xxx_DIR=&quot;/yyy&quot;, where /yyy is an</span><br><span class="line"># absolute path. No other format is supported.</span><br><span class="line"># </span><br><span class="line">XDG_DESKTOP_DIR=&quot;$HOME/桌面&quot;</span><br><span class="line">XDG_DOWNLOAD_DIR=&quot;$HOME/下载&quot;</span><br><span class="line">XDG_TEMPLATES_DIR=&quot;$HOME/模板&quot;</span><br><span class="line">XDG_PUBLICSHARE_DIR=&quot;$HOME/公共&quot;</span><br><span class="line">XDG_DOCUMENTS_DIR=&quot;$HOME/文档&quot;</span><br><span class="line">XDG_MUSIC_DIR=&quot;$HOME/音乐&quot;</span><br><span class="line">XDG_PICTURES_DIR=&quot;$HOME/图片&quot;</span><br><span class="line">XDG_VIDEOS_DIR=&quot;$HOME/视频&quot;</span><br></pre></td></tr></table></figure>
+
+
+<p>修改后的</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># This file is written by xdg-user-dirs-update</span><br><span class="line"># If you want to change or add directories, just edit the line you&#x27;re</span><br><span class="line"># interested in. All local changes will be retained on the next run</span><br><span class="line"># Format is XDG_xxx_DIR=&quot;$HOME/yyy&quot;, where yyy is a shell-escaped</span><br><span class="line"># homedir-relative path, or XDG_xxx_DIR=&quot;/yyy&quot;, where /yyy is an</span><br><span class="line"># absolute path. No other format is supported.</span><br><span class="line"># </span><br><span class="line">XDG_DESKTOP_DIR=&quot;$HOME/Desktop&quot;</span><br><span class="line">XDG_DOWNLOAD_DIR=&quot;$HOME/Downloads&quot;</span><br><span class="line">XDG_TEMPLATES_DIR=&quot;$HOME/Templates&quot;</span><br><span class="line">XDG_PUBLICSHARE_DIR=&quot;$HOME/Public&quot;</span><br><span class="line">XDG_DOCUMENTS_DIR=&quot;$HOME/Documents&quot;</span><br><span class="line">XDG_MUSIC_DIR=&quot;$HOME/Music&quot;</span><br><span class="line">XDG_PICTURES_DIR=&quot;$HOME/Pictures&quot;</span><br><span class="line">XDG_VIDEOS_DIR=&quot;$HOME/Videos&quot;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<p>#安装需要的软件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt install xdg-user-dirs-gtk</span><br></pre></td></tr></table></figure>
+
+<p>#临时转换系统语言为英文，重启后会自动恢复原值的</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">export LANG=en_US</span><br></pre></td></tr></table></figure>
+
+<p>#执行转换命令，弹出的窗口中会询问是否将目录转化为英文路径，同意并关闭</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">xdg-user-dirs-gtk-update</span><br></pre></td></tr></table></figure>
+
+<p>#转换回系统语言为中文，也可以不执行下面的命令，直接重启也一样的</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">export LANG=zh_CN</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>linux</tag>
+        <tag>debian</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Debian  添加服务自启动</title>
+    <url>/uncategorized/Debian-%E6%B7%BB%E5%8A%A0%E6%9C%8D%E5%8A%A1%E8%87%AA%E5%90%AF%E5%8A%A8/</url>
+    <content><![CDATA[<p><strong>xxx为服务名称</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/etc/init.d/xxx</span><br><span class="line">update-rc.d xxx defaults</span><br><span class="line">service xxx status</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>vps</tag>
+        <tag>linux</tag>
+        <tag>debian</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title> 红米NOTE4X SYSTEM只读改读写 </title>
+    <url>/uncategorized/%E7%BA%A2%E7%B1%B3NOTEN4X-SYSTEM%E5%8F%AA%E8%AF%BB%E6%94%B9%E8%AF%BB%E5%86%99/</url>
+    <content><![CDATA[<p>切换Root用户执行以下命令</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mount -o rw,remount -t ext4 /dev/block/platform/soc/7824900.sdhci/by-name/system /system</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>安卓</tag>
+        <tag>玩机</tag>
+      </tags>
+  </entry>
+</search>
